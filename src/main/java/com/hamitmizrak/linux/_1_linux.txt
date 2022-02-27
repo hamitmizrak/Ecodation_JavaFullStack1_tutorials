@@ -1,0 +1,148 @@
+1990 Tinus torvalds
+Unix paralı
+Linux parasız
+########################################################################################
+linux 2 tane bileşenler:
+++++++++++++++++++++++++
+1-) kernel (çekirdek) ==> yazılım ile donanım arasındaki haberleşmeyi sağlar
+2-) shell (kabuk)     ==> client gelen istekleri kernel iletir.
+bash(Bourne Again SHell ==>linux default kabuk) ,sh,  ksh
+
+linux özellikleri
+++++++++++++++++++++++++
+open source (açık kaynak kodlu)
+GNU/GPL
+GNU: Gnu is Not Unix
+GPL: GNU General Lisans (değiştirebilirsin,kullanabilirim,dağıtabilirim)
+PID: Process ID
+65535 tane port:
+x<=1024
+80 ==> 8080
+443
+FTP: File Transfer Protocol (dosya paylaşımını sağlamak)
+
+Ubuntu: güney afrika dilinde nesneye saygı anlamına gelmektedir.
+
+dosya sistemleri
+1-)Windows ==> FAT(eskisi) ==> NTFS
+2-)Linux   ==> Ext2,Ext3
+
+Linux Dosya Sistemleri
+etc:servislerimizi ayar dosyaları
+media: harici dosyalarımızı burada barındırız.
+opt: optional seçimli olarak paketler biirmleri
+var: dinamik olarak büyüyen dosyaları burada saklarız örneğin: log
+
+Linux
+Ubuntu apt, apt-get
+Debian apt
+Centos yum
+Fedora dnf
+
+########################################################################################
+#### Linux Komutları ###############
+Ctrl+Alt+T=terminal açar
+
+sudo su (password)
+
+mkdir --help (bu kod nasıl çalışır yardımcı olur)
+man mkdir (detaylı açıklama yapar)
+
+ping www.google.com
+ping 172.165.5.2
+
+whoami   ==> ben kimim
+hostname ==>
+whereis java
+whatis java
+
+history ==> daha önceden yazdığım kodları gösterir
+
+sudo :SuperUserDO
+clear ==> ekranı temizler
+
+apt install leafpad ==> program yükler
+apt install -f  ==> eğer programlarda bir eksiklik varsa git bul ve yükle
+
+pwd      ==> hangi dizindeyim (url)
+ls
+ls -al
+
+cd   ==> dizin değiştirmek için kullanıyoruz.
+cd / ==> root gider
+cd ~ ==> ana dizin
+cd .. ==> bir önceki dizin
+
+mkdir dizinAdi ==> dosya oluştur
+rmdir dizinAdi ==> dosya sil
+rm -r dizinAdi ==> iç içe dosyaları siler
+
+cat >> deneme.txt (dosya oluştur ve içine yaz çıkış için Ctrl+C yap)
+cat > deneme.txt (öncekileri  siler yenisi ekler)
+cat deneme.txt (dosya okuma)
+tac deneme.txt (dosyayı tersten okur)
+
+grep yumurta dosya7.txt
+
+tail yeni.txt (sondan 10 satırı göster)
+tail -n 3 yeni.txt
+
+sudo apt install zip
+sudo apt install unzip
+zip -r dosyaadi.zip ./*
+unzip dosyaadi.zip -d acilmisDosya
+
+mv eski.txt yeni.txt (isim değiştirmek için kullanıyoruz)
+mv eski.txt dizinAdi/yeni44.txt
+
+cp eski.txt /dizinAdi (copy)
+
+diff dosya5.txt dosya6.txt
+
+########################################################################################
+### editor ###
+sudo apt install vim
+vim dosyaAdi.txt
+i (insert modu)
+ESC
+:wq (kaydet çıkış)
+:q! (kaydetmeden çık)nano
+
+
+###########################################################
+Permission
+rwx=4+2+1=7
+dosya sahibi |  aynı gruptan | diğer kişiler
+chmod 777 yeni.txt (yetkilenlendirme)
+
+###########################################################
+#####Bilgilendirme
+df (disk hakkında bilgi almak)
+du
+lshw -short
+free -m (bellek)
+
+cal
+date
+
+###########################################################
+#####kill him
+top
+kill pidNumarasi
+kill -9 pidNumarasi
+
+exit
+reboot
+sudo shutdown
+
+sudo apt install net-tools
+ifconfig
+
+
+
+
+
+
+
+
+
