@@ -1,0 +1,67 @@
+############ Git hazırlık #######################################
+git init
+git add .
+git commit -m "first commit"
+git remote add origin https://github.com/hamitmizrak/git_github_tutorials.git
+git push -u origin master
+
+############ Ayarlar ########################################
+git config --global user.name "hamitmizrak"
+git config --global user.email "hamitmizrak@gmail.com"
+git config --global -l
+
+############ Komutlar #######################################
+git status
+git log ==> commtilerimin bilgisini almak için kullanıyorum
+## local bilgisayarıma githubtan verileri indirmek için kullanıyoruz.
+git clone https://github.com/hamitmizrak/git_github_tutorials.git
+git commit -a -m "hem ekleme hem güncelleme"
+
+
+############ .gitignore #######################################
+Dikkat: .gitignore mutlaka commitlemeliyim ondan sonra takip edilmesini istemediğim dosyaları yazıyorum
+.gitignore ==> git tarafından takip edilmesini istemdiğimiz dosya ve/veya dizinler github göndermez ve takibini yapmaz
+
+
+############ Clone ########################################
+git clone https://github.com/hamitmizrak/git_github_tutorials.git
+
+############ Checkout ########################################
+checkout: branchler veya commitler arasında gidip/gelmeyi sağlar
+git checkout ab52c52ac63
+
+############ stash #######################################
+Dikkatttt: stash için öncelikle ==> git add .  ===> yapmalıyız
+git stash 
+git stash list
+git stash pop  ==> 
+git stash apply stash@{1} ==> istediğimiz stash'i çağırmak istersek
+git stash drop stash@{1} ==> stashleri silmek
+
+############ branch #######################################
+projemizde birden fazla kollar açmak istioyorsak kullanıyoruz.
+git branch frontend
+git branch
+git branch --all
+git branch -d frontend
+
+
+############ diff #######################################
+diff: iki branch arasındaki farklılığı bize gösterir.
+git diff master backend1
+
+
+############ pull #######################################
+git pull ==> GitHubataki dosyaları almak için kullanıyoruz.
+
+############ merge #######################################
+merge: yan dal branchi ana branche eklemek yani birleştirmek için kullanılır.
+yan dal branch:
+
+git checkout backend
+git add .
+git commit -m "yeni"
+git checkout master
+git merge backend
+
+
